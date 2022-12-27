@@ -1,0 +1,38 @@
+#include<iostream>     //n=3 t=2 a1=1 a2=2 a3=3 a4=4 f=26
+using namespace std;
+int main()
+{
+	int n, i;
+	double t, a, f = 0;
+	cout << "enter n: ";
+	cin >> n;
+	cout << "enter t: ";
+	cin >> t;
+	double p = t;
+	int e;
+	e = n;
+	for (i = 0; i <= n; i++)
+	{
+		cout << "enter a: ";
+		cin >> a;
+		for (int j = 1;j < e;j++)
+		{
+			t *= p;
+		}
+		if (e == 0)
+		{
+			t = 1;
+		}
+		if (e == 1)
+		{
+			t = p;
+		}
+		f = f + a * t;
+		t = p;
+		e = e - 1;
+	}
+	cout << "f = " << f;
+	cin.get();
+	cin.get();
+	return 0;
+}
