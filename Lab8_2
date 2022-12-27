@@ -1,4 +1,4 @@
-#include<iostream>     //n=3 t=2 a1=1 a2=2 a3=3 a4=4 f=26
+#include<iostream>
 using namespace std;
 int main()
 {
